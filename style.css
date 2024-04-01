@@ -73,7 +73,16 @@ h1 {
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 10s linear infinite;
+  animation: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --animation-direction: forwards;
 }
 
 @keyframes scroll {
