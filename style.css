@@ -83,7 +83,3 @@ h1 {
     ); /* 0.5rem is the gap which is half size of main gap*/
   }
 }
-
-.test {
-  background-color: red !important;
-}
